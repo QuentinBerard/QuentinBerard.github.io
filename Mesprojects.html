@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styleprojects.css" media="all" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ma page de test</title>
+  </head>
+<header>
+   <h2>Bienvenue sur ma pages PROJECTS</h2>
+</header>
+  <body>
+    <div id="sideNavigation" class="sidenav">
+  <a href="file:///C:/Users/Lolil/OneDrive/Documents/GitHub/PROJECT%20PORTFOLIO/Portfolio.html#homegif">Home</a>
+  <a href="file:///C:/Users/Lolil/OneDrive/Documents/GitHub/PROJECT%20PORTFOLIO/Portfolio.html#quijesuis">Qui suis je ?</a>
+  <button class="dropdown-btn">Mes Projects</button>
+  <div class="dropdown-container">
+    <a href="file:///C:/Users/Lolil/OneDrive/Documents/GitHub/PROJECT%20PORTFOLIO/Mesprojects.html">Apercu projects</a>
+    <a href="file:///C:/Users/Lolil/OneDrive/Documents/GitHub/PROJECT%20PORTFOLIO/Mesprojects.html#projetlua">Lua JV</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="curriculumvitae.html">Mon CV</a>
+  <a href="#contacts">Contacts</a>
+</div>
+
+<div id="main">
+<p>Ici sont entreposé des images et courtes descriptions de mes projects de cette année ou personnels.
+  <br> Vous pouvez aussi y acceder via mon GitHub il y aura un lien pour chaque project</p>
+  <hr>
+  <!-- <ul>
+<div>    <li class="project" id="epilepsy">Premier project de l'année : Une crise d'Epilepsy</li> </div>
+<div>    <li class="project" id="pico">Jeu vidéo rétro</li> </div>
+<div> <li class="project" id="fizz">Exercice seul : FizzBuzz</li></div>
+</ul>
+
+ <img src="" name="imgCode"> -->
+
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="morpion-image.png" alt="Morpion" style="width:100%">
+      <h3>Morpion</h3>
+      <p>Un petit morpion simple comme on les aimes réalisé en tout début d'année</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="fizzbuzz.png" alt="code" style="width:100%">
+      <h3>Fibbonnaci</h3>
+      <p>Résultat du code réalisé pour reproduire la suite de Fibbonnaci</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <img src="pico-herbe.png" alt="herbe" style="width:100%">
+      <h3><a href=#jeuvideo>Jeu vidéo</a></h3>
+      <p>Petit jeu réalisé dans le language LUA ce project est un petit labyrinth bien sympathique</p>
+    </div>
+  </div>
+<div class="column">
+  <div class="content">
+    <img src="loading.gif" alt="loading" style="width:100%">
+    <h3>Loading...</h3>
+    <p>Ceci est un gif qui sert uniquement a me prendre de l'espace pour apprendre a gerer cette organisation</p>
+  </div>
+</div>
+</div>
+<div class="content">
+  <h3>Contactez-moi</h3>
+  <p>Si vous avez des questions je serais ravi d'y répondre</p>
+
+  <div class="container">
+    <form action="mailto:quent.berard.pro@gmail.com" method="GET">
+      <label for="fname">Name</label>
+      <input type="text" id="fname" name="name" placeholder="Your name..">
+
+      <label for="lname">Email</label>
+      <input type="text" id="lname" name="email" placeholder="Your email..">
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Subject" ></textarea>
+
+      <input type="submit" value="Continuer">
+    </form>
+  </div>
+
+    <!-- <?php
+    if (isset($_POST['message'])) {
+        $position_arobase = strpos($_POST['email'], '@');
+        if ($position_arobase === false)b
+            echo '<p>Votre email doit comporter un arobase.</p>';
+        else {
+            $retour = mail('jules@free.fr', 'Envoi depuis la page Contact', $_POST['message'], 'From: ' . $_POST['email']);
+            if($retour)
+                echo '<p>Votre message a été envoyé.</p>';
+            else
+                echo '<p>Erreur.</p>';
+        }
+    }
+    ?> -->
+</div>
+<hr>
+<h3 id="jeuvideo">Jeu vidéo Lua</h3>
+<div class="slideshow-container" id="projetlua">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="pico-herbe.png" style="width:100%">
+    <div class="text">Herbe</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="pico-lave.png" style="width:100%">
+    <div class="text">lave</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="pico-glace.png" style="width:100%">
+    <div class="text">glace</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="pico-desert.png" style="width:100%">
+    <div class="text">Desert</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<p>Description : En 2 semaines, avec min groupe nous avons cherché a faire un labirynthe avec différents "biomes"
+ pour le rendre plus amusant on y a ajouter des collisions
+et beaucoup d'autres petites choses les graphismes sont très sympathiques</p>
+<hr>
+
+
+</div>
+
+<footer  id='contacts'>
+<h4>Contactez-moi</h4>
+  <p>Auteur: Quentin Berard<br>
+  quent.berard.pro@gmail.com <br>
+  07 68 88 64 52</p>
+  <a href="https://www.linkedin.com/in/quentin-berard-8717661b9/" class="fa fa-linkedin" target="_blank"></a>
+<a href="https://github.com/QuentinBerard"><img  src="icone-github.png" id="git" target="_blank"/></a>
+</footer>
+</div>
+<script src="projects.js" type = "text/javascript"></script>
+  </body>
+</html>
